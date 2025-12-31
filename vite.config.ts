@@ -8,8 +8,12 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        main: './index.html'
+        main: 'index.html'
       }
     }
+  },
+  server: {
+    port: 3000,
+    open: true
   }
 })

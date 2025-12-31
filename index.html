@@ -123,13 +123,13 @@
         z-index: 10001;
       }
 
-      /* CORREÇÃO DO ERRO DE CORTE (CLIPPING) */
+      /* CORREÇÃO DEFINITIVA DO ERRO DE CORTE (CLIPPING) */
       .gold-text-gradient {
         background: linear-gradient(135deg, #D4AF37 0%, #FDE047 50%, #B4941F 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-flex;
-        padding: 0.1em 0.15em 0.25em 0.15em;
+        padding: 0.1em 0.2em 0.25em 0.2em; /* Padding maior previne cortes em fontes itálicas */
         margin-bottom: -0.1em;
         line-height: 1.1;
         overflow: visible;
@@ -154,8 +154,8 @@
     <div class="custom-cursor-dot" id="cursor-dot"></div>
     <div id="root"></div>
     
-    <!-- Chamada do script principal relativo para o build do Vite -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Chamada do script principal absoluto para o build do Vite -->
+    <script type="module" src="/index.tsx"></script>
 
     <script>
       const cursor = document.getElementById('cursor');
