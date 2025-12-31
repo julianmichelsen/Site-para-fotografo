@@ -6,24 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#020617" />
     
-    <!-- SEO & Metatags de Produção -->
     <title>Robson Quadros | Filmmaker de Casamentos de Luxo na Serra Gaúcha</title>
-    <meta name="title" content="Robson Quadros | Filmmaker de Casamentos de Luxo na Serra Gaúcha">
-    <meta name="description" content="Especialista em cinema de casamento autoral. Transformamos seu grande dia em um patrimônio emocional eterno. Atendimento premium no Vale dos Vinhedos e Gramado.">
-    <meta name="keywords" content="filmmaker casamento, vídeo casamento serra gaúcha, bento gonçalves, vale dos vinhedos, cinema de casamento, destination wedding brasil, filmagem premium, robson quadros">
-    <link rel="canonical" href="https://robsonquadros.com.br/" />
-
-    <!-- Open Graph / Facebook / Instagram -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://robsonquadros.com.br/">
-    <meta property="og:title" content="Robson Quadros | Cinema de Casamento Autoral">
-    <meta property="og:description" content="Não apenas um vídeo, mas o seu legado emocional em formato de cinema.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
-
+    <meta name="description" content="Especialista em cinema de casamento autoral. Transformamos seu grande dia em um patrimônio emocional eterno.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -31,16 +21,10 @@
           extend: {
             colors: {
               gold: {
-                300: '#FDE047',
-                400: '#FACC15',
-                500: '#D4AF37',
-                600: '#B4941F',
-                700: '#856D14',
+                300: '#FDE047', 400: '#FACC15', 500: '#D4AF37', 600: '#B4941F', 700: '#856D14',
               },
               cinema: {
-                800: '#1e293b',
-                900: '#0f172a',
-                950: '#020617',
+                800: '#1e293b', 900: '#0f172a', 950: '#020617',
               }
             },
             fontFamily: {
@@ -98,10 +82,6 @@
         90% { transform: translate(-10%, 10%); }
       }
 
-      ::-webkit-scrollbar { width: 5px; }
-      ::-webkit-scrollbar-track { background: #020617; }
-      ::-webkit-scrollbar-thumb { background: #D4AF37; }
-
       .custom-cursor {
         width: 30px;
         height: 30px;
@@ -123,13 +103,12 @@
         z-index: 10001;
       }
 
-      /* CORREÇÃO DEFINITIVA DO ERRO DE CORTE (CLIPPING) */
       .gold-text-gradient {
         background: linear-gradient(135deg, #D4AF37 0%, #FDE047 50%, #B4941F 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-flex;
-        padding: 0.1em 0.2em 0.25em 0.2em; /* Padding maior previne cortes em fontes itálicas */
+        padding: 0.1em 0.2em 0.25em 0.2em;
         margin-bottom: -0.1em;
         line-height: 1.1;
         overflow: visible;
@@ -154,8 +133,8 @@
     <div class="custom-cursor-dot" id="cursor-dot"></div>
     <div id="root"></div>
     
-    <!-- Chamada do script principal absoluto para o build do Vite -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- Script Principal como Módulo (Vite irá compilar isso) -->
+    <script type="module" src="./index.tsx"></script>
 
     <script>
       const cursor = document.getElementById('cursor');
