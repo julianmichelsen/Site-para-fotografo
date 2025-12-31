@@ -67,7 +67,7 @@
         width: 300%;
         height: 300%;
         background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-        opacity: 0.02;
+        opacity: 0.012;
         pointer-events: none;
         z-index: 9999;
         animation: grain 8s steps(10) infinite;
@@ -83,19 +83,19 @@
       }
 
       .custom-cursor {
-        width: 30px;
-        height: 30px;
-        border: 1px solid rgba(212, 175, 55, 0.5);
+        width: 34px;
+        height: 34px;
+        border: 1px solid rgba(212, 175, 55, 0.4);
         border-radius: 50%;
         position: fixed;
         pointer-events: none;
         z-index: 10000;
-        transition: transform 0.1s ease-out, background 0.3s ease;
+        transition: transform 0.15s ease-out, background 0.3s ease;
       }
 
       .custom-cursor-dot {
-        width: 4px;
-        height: 4px;
+        width: 5px;
+        height: 5px;
         background: #D4AF37;
         border-radius: 50%;
         position: fixed;
@@ -108,10 +108,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-flex;
-        padding: 0.1em 0.2em 0.25em 0.2em;
-        margin-bottom: -0.1em;
+        padding: 0.1em 0.15em 0.2em 0.15em;
         line-height: 1.1;
-        overflow: visible;
       }
     </style>
   <script type="importmap">
@@ -133,9 +131,6 @@
     <div class="custom-cursor-dot" id="cursor-dot"></div>
     <div id="root"></div>
     
-    <!-- Script Principal como Módulo (Vite irá compilar isso) -->
-    <script type="module" src="./index.tsx"></script>
-
     <script>
       const cursor = document.getElementById('cursor');
       const dot = document.getElementById('cursor-dot');
@@ -146,11 +141,11 @@
         document.addEventListener('mousemove', (e) => {
           const x = e.clientX;
           const y = e.clientY;
-          dot.style.transform = `translate(${x - 2}px, ${y - 2}px)`;
-          cursor.style.transform = `translate(${x - 15}px, ${y - 15}px)`;
+          dot.style.transform = `translate(${x - 2.5}px, ${y - 2.5}px)`;
+          cursor.style.transform = `translate(${x - 17}px, ${y - 17}px)`;
         });
-        document.addEventListener('mousedown', () => cursor.style.transform += ' scale(0.7)');
-        document.addEventListener('mouseup', () => cursor.style.transform = cursor.style.transform.replace(' scale(0.7)', ''));
+        document.addEventListener('mousedown', () => cursor.style.transform += ' scale(0.6)');
+        document.addEventListener('mouseup', () => cursor.style.transform = cursor.style.transform.replace(' scale(0.6)', ''));
       }
     </script>
   </body>

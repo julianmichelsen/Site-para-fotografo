@@ -3,7 +3,7 @@ import { PricingPackage, Testimonial, NavItem } from './types';
 
 export const COMPANY_NAME = "Robson Quadros";
 export const TAGLINE = "Patrimônios Emocionais em Formato de Cinema";
-export const PHONE_NUMBER = "5554999999999"; 
+export const PHONE_NUMBER = "555499333799"; 
 export const WHATSAPP_LINK = `https://wa.me/${PHONE_NUMBER}?text=Olá%20Robson,%20queremos%20que%20você%20eternize%20nossa%20história.`;
 
 export const NAV_ITEMS: NavItem[] = [
@@ -97,21 +97,21 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
     name: "Ana & Lucas",
-    role: "Casamento no Vale dos Vinhedos",
+    role: "Vale dos Vinhedos",
     text: "Não recebemos apenas um vídeo, recebemos a chance de reviver o dia mais feliz das nossas vidas com a mesma intensidade de quando aconteceu.",
     image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=200&h=200"
   },
   {
     id: 2,
     name: "Mariana & Carlos",
-    role: "Destination Wedding Gramado",
+    role: "Gramado",
     text: "O Robson tem o dom de ver o invisível. Cada detalhe, cada lágrima discreta... tudo virou poesia pura nas mãos dele.",
     image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=200&h=200"
   },
   {
     id: 3,
     name: "Juliana & Pedro",
-    role: "Vinícola Lovara",
+    role: "Bento Gonçalves",
     text: "A sensibilidade do Robson é algo raro. Ele capturou a essência da nossa história de uma forma que nenhum outro profissional conseguiu.",
     image: "https://images.unsplash.com/photo-1460974296241-82302de0111e?auto=format&fit=crop&q=80&w=200&h=200"
   }
