@@ -20,26 +20,6 @@
     <meta property="og:description" content="Não apenas um vídeo, mas o seu legado emocional em formato de cinema.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
 
-    <!-- SEO Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Robson Quadros Filmmaker",
-      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200",
-      "description": "Premium wedding filmmaking based in Bento Gonçalves, RS. Specializing in emotional storytelling and fine art cinema.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bento Gonçalves",
-        "addressRegion": "RS",
-        "addressCountry": "BR"
-      },
-      "url": "https://robsonquadros.com.br/",
-      "telephone": "+5554999999999",
-      "priceRange": "$$$"
-    }
-    </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -148,23 +128,23 @@
         background: linear-gradient(135deg, #D4AF37 0%, #FDE047 50%, #B4941F 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        display: inline-block;
-        padding: 0.1em 0.1em 0.2em 0.1em; /* Espaço extra para evitar clipping */
-        margin-bottom: -0.2em;
-        line-height: 1.2;
-        overflow: visible; /* Garante que a fonte não seja cortada pelo container */
+        display: inline-flex;
+        padding: 0.1em 0.15em 0.25em 0.15em;
+        margin-bottom: -0.1em;
+        line-height: 1.1;
+        overflow: visible;
       }
     </style>
   <script type="importmap">
 {
   "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
     "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-    "vite": "https://esm.sh/vite@^7.3.0"
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
@@ -174,8 +154,8 @@
     <div class="custom-cursor-dot" id="cursor-dot"></div>
     <div id="root"></div>
     
-    <!-- Chamada do script principal para Vercel -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- Chamada do script principal relativo para o build do Vite -->
+    <script type="module" src="./index.tsx"></script>
 
     <script>
       const cursor = document.getElementById('cursor');
