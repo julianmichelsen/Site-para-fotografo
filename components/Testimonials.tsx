@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { TESTIMONIALS } from '../constants';
 import { Quote } from 'lucide-react';
@@ -16,22 +17,24 @@ const TestimonialCard: React.FC<{ testimonial: typeof TESTIMONIALS[0]; index: nu
     >
       <Quote className="text-gold-600/10 absolute top-6 right-6 w-12 h-12 group-hover:text-gold-600/20 transition-colors" />
       
-      <p className="text-gray-300 italic font-serif mb-8 leading-relaxed relative z-10">
+      <p className="text-gray-300 italic font-serif mb-8 leading-relaxed relative z-10 min-h-[100px]">
         "{testimonial.text}"
       </p>
       
       <div className="flex items-center gap-5">
-        <div className="w-14 h-14 rounded-full overflow-hidden border border-gold-500/30 bg-cinema-900 flex-shrink-0 flex items-center justify-center shadow-inner">
+        <div className="w-14 h-14 rounded-full overflow-hidden border border-gold-500/30 bg-cinema-900 flex-shrink-0 flex items-center justify-center shadow-inner relative">
           {!imageError ? (
             <img 
               src={testimonial.image} 
-              alt="" // Vazio para evitar que o alt text vaze para dentro do círculo se quebrar
+              alt="" // Vazio para evitar que o alt text vaze se a imagem quebrar
               onError={() => setImageError(true)}
               className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-110 transition-all duration-700"
               loading="lazy"
             />
           ) : (
-            <span className="text-gold-500 font-display text-xl font-bold select-none">{testimonial.name.charAt(0)}</span>
+            <div className="w-full h-full bg-cinema-800 flex items-center justify-center">
+              <span className="text-gold-500 font-display text-xl font-bold select-none">{testimonial.name.charAt(0)}</span>
+            </div>
           )}
         </div>
         <div className="flex flex-col min-w-0">

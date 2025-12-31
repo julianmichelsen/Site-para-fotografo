@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, PlayCircle } from 'lucide-react';
@@ -20,9 +21,11 @@ const Hero: React.FC = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?q=90&w=2000&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000" 
           alt="Cinema de Casamento de Luxo na Serra Gaúcha por Robson Quadros" 
           className="w-full h-full object-cover opacity-60 md:opacity-70"
+          loading="eager" // Carrega imediatamente para melhorar o LCP na Vercel
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-cinema-950" />
       </motion.div>
@@ -46,9 +49,9 @@ const Hero: React.FC = () => {
               <span className="text-5xl md:text-9xl lg:text-[11rem] font-display text-white leading-[0.85] tracking-tight uppercase px-4">
                 Cinema
               </span>
-              <div className="relative mt-[-0.1em] md:mt-[-0.15em] px-6">
+              <div className="relative mt-[-0.1em] md:mt-[-0.15em] px-8">
                 <div className="absolute inset-0 bg-gold-500/10 blur-3xl rounded-full"></div>
-                <span className="gold-text-gradient font-serif italic font-light text-4xl md:text-7xl lg:text-[8.5rem] relative z-20 drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] block pb-2">
+                <span className="gold-text-gradient font-serif italic font-light text-4xl md:text-7xl lg:text-[8.5rem] relative z-20 drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] block pb-4">
                   De Emoções
                 </span>
               </div>

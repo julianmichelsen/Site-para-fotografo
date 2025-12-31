@@ -4,25 +4,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020617" />
     
-    <!-- Primary Meta Tags -->
+    <!-- SEO & Metatags de Produção -->
     <title>Robson Quadros | Filmmaker de Casamentos de Luxo na Serra Gaúcha</title>
     <meta name="title" content="Robson Quadros | Filmmaker de Casamentos de Luxo na Serra Gaúcha">
-    <meta name="description" content="Especialista em cinema de casamento autoral. Transformamos seu grande dia em um patrimônio emocional eterno. Atendimento premium no Vale dos Vinhedos e Destination Weddings.">
+    <meta name="description" content="Especialista em cinema de casamento autoral. Transformamos seu grande dia em um patrimônio emocional eterno. Atendimento premium no Vale dos Vinhedos e Gramado.">
     <meta name="keywords" content="filmmaker casamento, vídeo casamento serra gaúcha, bento gonçalves, vale dos vinhedos, cinema de casamento, destination wedding brasil, filmagem premium, robson quadros">
-    <meta name="author" content="Robson Quadros">
+    <link rel="canonical" href="https://robsonquadros.com.br/" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook / Instagram -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://robsonquadros.com.br/">
     <meta property="og:title" content="Robson Quadros | Cinema de Casamento Autoral">
-    <meta property="og:description" content="Não apenas um vídeo, mas o seu legado emocional em formato de cinema. Conheça nossa metodologia de 90 dias.">
+    <meta property="og:description" content="Não apenas um vídeo, mas o seu legado emocional em formato de cinema.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Robson Quadros | Cinema de Casamento Autoral">
-    <meta property="twitter:description" content="Transformamos histórias de amor em experiências cinematográficas eternas na Serra Gaúcha.">
 
     <!-- SEO Structured Data -->
     <script type="application/ld+json">
@@ -37,11 +33,6 @@
         "addressLocality": "Bento Gonçalves",
         "addressRegion": "RS",
         "addressCountry": "BR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -29.165,
-        "longitude": -51.518
       },
       "url": "https://robsonquadros.com.br/",
       "telephone": "+5554999999999",
@@ -152,10 +143,15 @@
         z-index: 10001;
       }
 
+      /* CORREÇÃO DO ERRO DE CORTE (CLIPPING) */
       .gold-text-gradient {
         background: linear-gradient(135deg, #D4AF37 0%, #FDE047 50%, #B4941F 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: inline-block;
+        padding-bottom: 0.15em; /* Garante espaço para descenders das fontes */
+        padding-right: 0.05em;
+        line-height: 1.1;
       }
     </style>
     <script type="importmap">
