@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          {/* TAGLINE - Reduzida para economizar espaço vertical */}
+          {/* TAGLINE */}
           <div className="flex items-center justify-center gap-4 md:gap-8 mb-8 md:mb-10">
             <div className="h-[0.5px] w-6 md:w-16 bg-gold-500/30"></div>
             <span className="text-gold-400/80 tracking-[0.4em] md:tracking-[0.6em] uppercase text-[0.5rem] md:text-[0.6rem] font-black whitespace-nowrap">
@@ -44,28 +44,29 @@ const Hero: React.FC = () => {
             <div className="h-[0.5px] w-6 md:w-16 bg-gold-500/30"></div>
           </div>
           
-          {/* TÍTULO PRINCIPAL - Escala reduzida para caber na primeira dobra */}
+          {/* TÍTULO PRINCIPAL */}
           <div className="relative inline-block mb-8 md:mb-10">
             <h1 className="flex flex-col items-center">
               <span className="text-5xl md:text-8xl lg:text-[8.5rem] font-display text-white leading-[0.8] tracking-tight uppercase px-4">
-                Cinema
+                O Cinema
               </span>
               <div className="relative mt-2 md:-mt-3 px-8">
                 <div className="absolute inset-0 bg-gold-500/5 blur-[80px] rounded-full"></div>
                 <span className="gold-text-gradient font-serif italic font-light text-3xl md:text-6xl lg:text-[6.5rem] relative z-20 drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] block">
-                  De Emoções
+                  Da Sua Alma
                 </span>
               </div>
             </h1>
           </div>
 
-          {/* FRASE DESCRITIVA - Mais compacta */}
+          {/* FRASE DESCRITIVA */}
           <p className="max-w-xl mx-auto text-gray-400 text-sm md:text-base font-light leading-relaxed mb-10 md:mb-14 font-sans tracking-wide px-4 text-balance">
-            Não documentamos apenas eventos. Esculpimos o tempo para que vocês possam 
-            vencer o esquecimento e reviver o arrepio... para sempre.
+            Não documentamos eventos, decantamos atmosferas. <br className="hidden md:block" />
+            Esculpimos o tempo para que vocês possam vencer o esquecimento e 
+            reviver a verdade de cada olhar... para sempre.
           </p>
 
-          {/* CTAs - Agora mais prováveis de aparecerem na tela inicial */}
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 md:gap-8 justify-center items-center">
             <a 
               href="#contact" 
@@ -84,14 +85,13 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Indicador de scroll mais sutil */}
       <motion.div 
         className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/20 cursor-pointer flex flex-col items-center gap-2"
         animate={{ y: [0, 5, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
       >
-        <span className="text-[0.35rem] uppercase tracking-[0.8em] font-black opacity-30">Discovery</span>
+        <span className="text-[0.35rem] uppercase tracking-[0.8em] font-black opacity-30">Descubra</span>
         <ChevronDown size={14} strokeWidth={1} />
       </motion.div>
     </section>

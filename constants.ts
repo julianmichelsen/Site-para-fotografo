@@ -49,10 +49,10 @@ export const PACKAGES: PricingPackage[] = [
     id: 'essencia',
     name: 'Essência',
     priceRange: 'R$ 4.200',
-    description: 'A pureza da narrativa. Focado na conexão genuína e na entrega de uma joia visual atemporal.',
+    description: 'A pureza da narrativa. Um olhar minimalista focado na conexão genuína, ideal para celebrações íntimas e autênticas.',
     ctaText: 'Verificar Disponibilidade',
     features: [
-      { text: '08 horas de imersão', included: true },
+      { text: '08 horas de curadoria visual', included: true },
       { text: 'Filme Short Story (12-15 min)', included: true },
       { text: 'Color Grading Cinema HDR', included: true },
       { text: 'Olhar do Diretor (Robson)', included: true },
@@ -64,9 +64,9 @@ export const PACKAGES: PricingPackage[] = [
     id: 'narrativa',
     name: 'Narrativa',
     priceRange: 'R$ 7.800',
-    description: 'Nossa assinatura. Um mergulho profundo na sua história para criar um legado que atravessa gerações.',
+    description: 'Nossa assinatura artística. Um mergulho profundo para criar um filme que não apenas documenta, mas transporta vocês de volta.',
     isPopular: true,
-    ctaText: 'Eternizar Minha História',
+    ctaText: 'Solicitar Convite à Agenda',
     features: [
       { text: '10+ horas de imersão total', included: true },
       { text: 'Filme Cinematic (25-30 min)', included: true },
@@ -80,8 +80,8 @@ export const PACKAGES: PricingPackage[] = [
     id: 'legado',
     name: 'Legado',
     priceRange: 'Sob Consulta',
-    description: 'Para celebrações icônicas. Uma produção de alta escala com narrativa documental e equipe múltipla.',
-    ctaText: 'Solicitar Consultoria VIP',
+    description: 'Para celebrações icônicas. Uma produção de alta escala com narrativa documental e equipe múltipla para capturar o impalpável.',
+    ctaText: 'Consultoria de Alta Produção',
     features: [
       { text: 'Cobertura Ilimitada (Dia Todo)', included: true },
       { text: 'Documentário de Casamento Full', included: true },
@@ -98,7 +98,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: "Ana & Lucas",
     role: "Vale dos Vinhedos",
-    text: "Não recebemos apenas um vídeo, recebemos a chance de reviver o dia mais feliz das nossas vidas com a mesma intensidade de quando aconteceu.",
+    text: "Não recebemos apenas um filme, recebemos a chave para um portal. Assistir nosso dia através do olhar do Robson é reviver o arrepio.",
     image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=200&h=200"
   },
   {
