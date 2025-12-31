@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Robson Quadros | Filmmaker de Casamentos de Luxo na Serra Gaúcha</title>
+    <meta name="title" content="Robson Quadros | Filmmaker de Casamentos de Luxo na Serra Gaúcha">
+    <meta name="description" content="Especialista em cinema de casamento autoral. Transformamos seu grande dia em um patrimônio emocional eterno. Atendimento premium no Vale dos Vinhedos e Destination Weddings.">
+    <meta name="keywords" content="filmmaker casamento, vídeo casamento serra gaúcha, bento gonçalves, vale dos vinhedos, cinema de casamento, destination wedding brasil, filmagem premium, robson quadros">
+    <meta name="author" content="Robson Quadros">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robsonquadros.com.br/">
+    <meta property="og:title" content="Robson Quadros | Cinema de Casamento Autoral">
+    <meta property="og:description" content="Não apenas um vídeo, mas o seu legado emocional em formato de cinema. Conheça nossa metodologia de 90 dias.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Robson Quadros | Cinema de Casamento Autoral">
+    <meta property="twitter:description" content="Transformamos histórias de amor em experiências cinematográficas eternas na Serra Gaúcha.">
+
+    <!-- SEO Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Robson Quadros Filmmaker",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200",
+      "description": "Premium wedding filmmaking based in Bento Gonçalves, RS. Specializing in emotional storytelling and fine art cinema.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bento Gonçalves",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -29.165,
+        "longitude": -51.518
+      },
+      "url": "https://robsonquadros.com.br/",
+      "telephone": "+5554999999999",
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                300: '#FDE047',
+                400: '#FACC15',
+                500: '#D4AF37',
+                600: '#B4941F',
+                700: '#856D14',
+              },
+              cinema: {
+                800: '#1e293b',
+                900: '#0f172a',
+                950: '#020617',
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            animation: {
+              'rec-pulse': 'rec-pulse 1.5s ease-in-out infinite',
+            },
+            keyframes: {
+              'rec-pulse': {
+                '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+                '50%': { opacity: 0.3, transform: 'scale(0.8)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020617;
+        color: #f8fafc;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        cursor: none;
+      }
+      
+      @media (hover: none) and (pointer: coarse) {
+        body { cursor: auto; }
+        .custom-cursor, .custom-cursor-dot { display: none; }
+      }
+
+      .film-grain::after {
+        content: "";
+        position: fixed;
+        top: -100%;
+        left: -100%;
+        width: 300%;
+        height: 300%;
+        background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+        opacity: 0.02;
+        pointer-events: none;
+        z-index: 9999;
+        animation: grain 8s steps(10) infinite;
+      }
+
+      @keyframes grain {
+        0%, 100% { transform: translate(0, 0); }
+        10% { transform: translate(-5%, -10%); }
+        30% { transform: translate(7%, -25%); }
+        50% { transform: translate(-15%, 10%); }
+        70% { transform: translate(0%, 15%); }
+        90% { transform: translate(-10%, 10%); }
+      }
+
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #D4AF37; }
+
+      .custom-cursor {
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(212, 175, 55, 0.5);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 10000;
+        transition: transform 0.1s ease-out, background 0.3s ease;
+      }
+
+      .custom-cursor-dot {
+        width: 4px;
+        height: 4px;
+        background: #D4AF37;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 10001;
+      }
+
+      .gold-text-gradient {
+        background: linear-gradient(135deg, #D4AF37 0%, #FDE047 50%, #B4941F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+        "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.22.3"
+      }
+    }
+    </script>
+  </head>
+  <body class="film-grain">
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div id="root"></div>
+    <script>
+      const cursor = document.getElementById('cursor');
+      const dot = document.getElementById('cursor-dot');
+      
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      
+      if (!isTouchDevice) {
+        document.addEventListener('mousemove', (e) => {
+          const x = e.clientX;
+          const y = e.clientY;
+          dot.style.transform = `translate(${x - 2}px, ${y - 2}px)`;
+          cursor.style.transform = `translate(${x - 15}px, ${y - 15}px)`;
+        });
+        document.addEventListener('mousedown', () => cursor.style.transform += ' scale(0.7)');
+        document.addEventListener('mouseup', () => cursor.style.transform = cursor.style.transform.replace(' scale(0.7)', ''));
+      }
+    </script>
+  </body>
+</html>
